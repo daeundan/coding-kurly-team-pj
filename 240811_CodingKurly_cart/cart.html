@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/7a72e4068c.js"
+      crossorigin="andsonymous"
+    ></script>
+    <!--Custom css & js-->
+    <script defer src="./js/cart.js"></script>
+    <link rel="stylesheet" href="./css/cart.css" />
+    <link rel="stylesheet" href="./css/style.scss">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <section class="cart">
+        <!-- cart mobile -->
+        <div class="mobile_header">
+          <section class="cart">
+            <!-- cart -->
+            <div class="cart_inner">
+              <div class="cart_item_inner">
+                <div class="item_text">
+                  <h2>장바구니</h2>
+                  <div class="checkbox">
+                    <label class="custom-checkbox">
+                      <input type="checkbox" id="selectAll" />
+                      <span class="checkmark"></span>
+                      전체선택(0/0)
+                    </label>
+                    <label>
+                      <span class="checkmark"></span>
+                      선택삭제
+                    </label>
+                  </div>
+                </div>
+                <div class="cart_right">
+                  <div class="cart_box">
+                    <div class="cart_item">
+                      <div class="cart_item_inner">
+                        <div class="cart_item_logo">
+                          <img src="./img/logo.png" alt="logo" />
+                        </div>
+                        <div class="cart_item_text">
+                          <span>장바구니에 담긴 상품이 없습니다.</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart_price">
+                  <div class="cart_price_inner">
+                    <div class="cart_price_text">
+                      <span>상품금액</span>
+                      <span>0원</span>
+                    </div>
+                    <div class="cart_price_text">
+                      <span>상품할인금액</span>
+                      <span>0원</span>
+                    </div>
+                    <div class="cart_price_text">
+                      <span>배송비</span>
+                      <span>0원</span>
+                    </div>
+                    <div class="cart_price_end">
+                      <span>결제예정금액</span>
+                      <span>0원</span>
+                    </div>
+                  </div>
+                  <div class="login_btn">
+                    <button>주문하기</button>
+                  </div>
+                  <div class="cart_info">
+                    <span
+                      >[주문완료] 상태일 경우에만 취소 가능합니다.
+                      <br />[마이컬리]>주문내역 상세 페이지]에서 직접 취소하실 수
+                      있습니다.</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="cart_rec_inner">
+                <div class="cart_rec_box">
+                  <div id="cart_rec_text">
+                    <span>고객님, 이런 상품은 어떠세요?</span>
+                  </div>
+                  <div class="cart_rec_img">
+                    <div class="cart_rec_imgbox">
+                      <div class="cart_rec_item_img">
+                        <img src="./img/cart_img/rec_item01.jpg" alt="rec_item01" />
+                      </div>
+                      <div class="rec_price_coupon">
+                        <span>+30%쿠폰</span>
+                      </div>
+                      <div class="opacity_text">
+                        <span>최대혜택가 5,334원</span>
+                      </div>
+                      <div class="cart_rec_btn">
+                        <button>
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          <span>담기</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="cart_rec_imgbox">
+                      <div class="cart_rec_item_img">
+                        <img src="./img/cart_img/rec_item02.jpg" alt="rec_item02" />
+                      </div>
+                      <div class="rec_price_coupon">
+                        <span>+30%쿠폰</span>
+                      </div>
+                      <div class="opacity_text">
+                        <span>최대혜택가 5,334원</span>
+                      </div>
+                      <div class="cart_rec_btn">
+                        <button>
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          <span>담기</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cart_rec_str_box">
+                    <div class="cart_rec_textbox">
+                      <div class="cart_rec_item_price">
+                        <div class="cart_price_text">
+                          <ul>
+                            <!-- span은 인라인인데 p는 블락, p> span / ul> li p는 단락을 구조화 할때 씀-->
+                            <li>[자연실록] 무항생제 삼계탕용 두마리 통닭 (550gX2입)</li>
+                            <li>12,700원</li>
+                            <li>40%</li>
+                            <li>7,620원</li>
+                        </ul>
+                        </div>
+                        <div class="comment_text">
+                          <i class="fa-regular fa-comment-dots"></i>
+                          <p>9,999+</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cart_rec_textbox">
+                      <div class="cart_rec_item_price">
+                        <div class="cart_price_text">
+                          <ul>
+                            <li>[자연실록] 무항생제 삼계탕용 두마리 통닭 (550gX2입)</li>
+                            <li>12,700원</li>
+                            <li>40%</li>
+                            <li>7,620원</li>
+                          </ul>
+                        </div>
+                        <div class="comment_text">
+                          <i class="fa-regular fa-comment-dots"></i>
+                          <p>9,999+</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- cart -->
+          <!-- modal -->
+          <div id="loginModal" class="modal">
+            <div class="modal_content_inner">
+                <div class="modal_heading">
+                  <span class="order"></span>
+                  <span class="close">&times;</span>
+                </div>
+                <div class="modal_order_btn">
+                    <a href="#"><span id="order_1">회원 주문하기</span></a>
+                    <a href="#"><span id="order_2" class="order_button">비회원 주문하기</span></a>
+                </div>
+                <div class="modal_content">
+                    <div class="madal_login">
+                      <form action="http://127.0.0.1:5500" method="get">
+                        <input class="modal_login_text" type="text" placeholder="아이디를 입력해주세요" style="margin-bottom: 10px;">
+                        <input class="modal_login_text" type="password" placeholder="비밀번호를 입력해주세요">
+                        <ul class="idpw_such">
+                          <li>아이디 찾기 /</li>
+                          <li> 비밀번호 찾기</li>
+                        </ul>
+                          <span id="easy_login">간편로그인</span>
+                          <ul id="icon_img">
+                            <li><img src="./img/cart_img/kakao_icon.png" alt="kakao_icon"></li>
+                            <li>                   <img src="./img/cart_img/naver_icon.png" alt="naver_icon"></li>
+                            <li>                    <img src="./img/cart_img/facebook_icon.png" alt="facebook_icon"></li>
+                            <li>                    <img src="./img/cart_img/instagram_icon.png" alt="instagram_icon"></li>
+                            <li>                    <img src="./img/cart_img/google_icon.png" alt="google_icon"></li>
+                          </ul> <br>
+                          <div class="modal_footer">
+                            <p>
+                              <span>컬리가 처음인 고객님께</span>
+                              <span><b>웰컴 쿠폰팩을 드려요</b></span>
+                            </p>
+                            <span id="Join_btn">
+                              <a href="#">
+                                가입하고 혜택받기</a>
+                            </span>
+                          </div>
+                      </form>
+                    </div>
+                </div>
+              </div>
+          </div>
+          </section>
+        </div>
+        <!-- cart desktop-->
+        <div class="cart_inner">
+          <div class="cart_item_inner">
+            <div class="item_text">
+              <h2>장바구니</h2>
+              <div class="checkbox">
+                <label class="custom-checkbox">
+                  <input type="checkbox" id="selectAll" />
+                  <span class="checkmark"></span>
+                  전체선택(0/0)
+                </label>
+                <label>
+                  <span class="checkmark"></span>
+                  선택삭제
+                </label>
+              </div>
+              <!-- <form action="checkbox">
+                <input type="checkbox" name="check" id="check" />
+                <p>전체선택 (0/0)</p>
+                <p>선택삭제</p>
+              </form> -->
+            </div>
+            <div class="cart_right">
+              <div class="cart_box">
+                <div class="cart_item">
+                  <div class="cart_item_inner">
+                    <div class="cart_item_logo">
+                      <img src="./img/logo.png" alt="logo" />
+                    </div>
+                    <div class="cart_item_text">
+                      <span>장바구니에 담긴 상품이 없습니다.</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart_price">
+                  <div class="cart_price_inner">
+                    <div class="cart_price_text">
+                      <span>상품금액</span>
+                      <span>0원</span>
+                    </div>
+                    <div class="cart_price_text">
+                      <span>상품할인금액</span>
+                      <span>0원</span>
+                    </div>
+                    <div class="cart_price_text">
+                      <span>배송비</span>
+                      <span>0원</span>
+                    </div>
+                    <div class="cart_price_end">
+                      <span>결제예정금액</span>
+                      <span>0원</span>
+                    </div>
+                  </div>
+                  <div class="login_btn">
+                    <button>주문하기</button>
+                  </div>
+                  <div class="cart_info">
+                    <span
+                      >[주문완료] 상태일 경우에만 취소 가능합니다.
+                      <br />[마이컬리]>주문내역 상세 페이지]에서 직접 취소하실 수
+                      있습니다.</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart_rec_inner">
+            <div class="cart_rec_box">
+              <div id="cart_rec_text">
+                <span>고객님, 이런 상품은 어떠세요?</span>
+              </div>
+              <div class="cart_rec_img">
+                <div class="cart_rec_imgbox">
+                  <div class="cart_rec_item_img">
+                    <img src="./img/cart_img/rec_item01.jpg" alt="rec_item01" />
+                  </div>
+                  <div class="rec_price_coupon">
+                    <span>+30%쿠폰</span>
+                  </div>
+                  <div class="opacity_text">
+                    <span>최대혜택가 5,334원</span>
+                  </div>
+                  <div class="cart_rec_btn">
+                    <button>
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span>담기</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="cart_rec_imgbox">
+                  <div class="cart_rec_item_img">
+                    <img src="./img/cart_img/rec_item02.jpg" alt="rec_item02" />
+                  </div>
+                  <div class="rec_price_coupon">
+                    <span>+30%쿠폰</span>
+                  </div>
+                  <div class="opacity_text">
+                    <span>최대혜택가 5,334원</span>
+                  </div>
+                  <div class="cart_rec_btn">
+                    <button>
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span>담기</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="cart_rec_imgbox">
+                  <div class="cart_rec_item_img">
+                    <img src="./img/cart_img/rec_item03.jpg" alt="rec_item03" />
+                  </div>
+                  <div class="rec_price_coupon">
+                    <span>+30%쿠폰</span>
+                  </div>
+                  <div class="opacity_text">
+                    <span>최대혜택가 5,334원</span>
+                  </div>
+                  <div class="cart_rec_btn">
+                    <button>
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span>담기</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="cart_rec_imgbox">
+                  <div class="cart_rec_item_img">
+                    <img src="./img/cart_img/rec_item04.jpg" alt="rec_item04" />
+                  </div>
+                  <div class="rec_price_coupon">
+                    <span>+30%쿠폰</span>
+                  </div>
+                  <div class="opacity_text">
+                    <span>최대혜택가 5,334원</span>
+                  </div>
+                  <div class="cart_rec_btn">
+                    <button>
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      <span>담기</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="cart_rec_str_box">
+                <div class="cart_rec_textbox">
+                  <div class="cart_rec_item_price">
+                    <div class="cart_price_text">
+                      <ul>
+                        <!-- span은 인라인인데 p는 블락, p> span / ul> li p는 단락을 구조화 할때 씀-->
+                        <li>[자연실록] 무항생제 삼계탕용 두마리 통닭 (550gX2입)</li>
+                        <li>12,700원</li>
+                        <li>40%</li>
+                        <li>7,620원</li>
+                    </ul>
+                    </div>
+                    <div class="comment_text">
+                      <i class="fa-regular fa-comment-dots"></i>
+                      <p>9,999+</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart_rec_textbox">
+                  <div class="cart_rec_item_price">
+                    <div class="cart_price_text">
+                      <ul>
+                        <li>[자연실록] 무항생제 삼계탕용 두마리 통닭 (550gX2입)</li>
+                        <li>12,700원</li>
+                        <li>40%</li>
+                        <li>7,620원</li>
+                      </ul>
+                    </div>
+                    <div class="comment_text">
+                      <i class="fa-regular fa-comment-dots"></i>
+                      <p>9,999+</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart_rec_textbox">
+                  <div class="cart_rec_item_price">
+                    <div class="cart_price_text">
+                      <ul>
+                        <li>[자연실록] 무항생제 삼계탕용 두마리 통닭 (550gX2입)</li>
+                        <li>12,700원</li>
+                        <li>40%</li>
+                        <li>7,620원</li>
+                      <ul>
+                    </div>
+                    <div class="comment_text">
+                      <i class="fa-regular fa-comment-dots"></i>
+                      <p>9,999+</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart_rec_textbox">
+                  <div class="cart_rec_item_price">
+                    <div class="cart_price_text">
+                      <ul>
+                        <li>
+                          [자연실록] 무항생제 삼계탕용 두마리 통닭 (550gX2입)
+                        </li>
+                        <li>12,700원</li>
+                        <li>40%</li>
+                        <li>7,620원</li>
+                      </ul>
+                    </div>
+                    <div class="comment_text">
+                      <i class="fa-regular fa-comment-dots"></i>
+                      <p>9,999+</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- cart desk -->
+      <!-- modal -->
+      <div id="loginModal" class="modal">
+        <div class="modal_content_inner">
+            <div class="modal_heading">
+              <span class="order"></span>
+              <span class="close">&times;</span>
+            </div>
+            <div class="modal_order_btn">
+                <a href="#"><span id="order_1">회원 주문하기</span></a>
+                <a href="#"><span id="order_2">비회원 주문하기</span></a>
+            </div>
+            <div class="modal_content">
+                <div class="madal_login">
+                  <form action="http://127.0.0.1:5500" method="get">
+                    <input class="modal_login_text" type="text" placeholder="아이디를 입력해주세요" style="margin-bottom: 10px;">
+                    <input class="modal_login_text" type="password" placeholder="비밀번호를 입력해주세요">
+                    <ul class="idpw_such">
+                      <li>아이디 찾기 /</li>
+                      <li> 비밀번호 찾기</li>
+                    </ul>
+                      <span id="easy_login">간편로그인</span>
+                      <ul id="icon_img">
+                        <li><img src="./img/cart_img/kakao_icon.png" alt="kakao_icon"></li>
+                        <li>                   <img src="./img/cart_img/naver_icon.png" alt="naver_icon"></li>
+                        <li>                    <img src="./img/cart_img/facebook_icon.png" alt="facebook_icon"></li>
+                        <li>                    <img src="./img/cart_img/instagram_icon.png" alt="instagram_icon"></li>
+                        <li>                    <img src="./img/cart_img/google_icon.png" alt="google_icon"></li>
+                      </ul> <br>
+                      <div class="modal_footer">
+                        <p>
+                          <span>컬리가 처음인 고객님께</span>
+                          <span><b>웰컴 쿠폰팩을 드려요</b></span>
+                        </p>
+                        <span id="Join_btn">
+                          <a href="#">
+                            가입하고 혜택받기</a>
+                        </span>
+                      </div>
+                  </form>
+                </div>
+            </div>
+          </div>
+      </div>
+      </section>
+    </div>
+  </body>
+</html>
