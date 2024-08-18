@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/7a72e4068c.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--custom css, js-->
+    <link rel="stylesheet" href="./cart.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="cart-container">
+      <header>
+        <div class="cart-title-text">장바구니</div>
+        <div class="checkbox">
+          <label class="custom-checkbox">
+            <input type="checkbox" id="selectAll" />
+            <span class="checkmark"></span>
+            전체선택(0/0)
+          </label>
+          <span>|</span>
+          <label>
+            <span class="checkmark"></span>
+            선택삭제
+          </label>
+        </div>
+      </header>
+    </div>
+    <main>
+      <section id="cart_item-box">
+        <div class="cart-item-box">
+          <div class="cart-logo">
+            <img src="./cart_img/logo.png" alt="cart_logo" />
+            <span>마켓컬리</span>
+          </div>
+          <div class="cart-item-inner">
+            <div class="item-inner-box">
+              <div id="cold-item-example">
+                <div id="cold-logo">
+                  <img src="./cart_img/cold-item.png" alt="cold-" />
+                  <span>냉장 상품</span>
+                </div>
+                <div class="checkbox">
+                  <label class="custom-checkbox">
+                    <input type="checkbox" id="selectAll" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <div id="cold-item">
+                    <img src="./cart_img/rec_item01.jpg" alt="item" />
+                    <div class="cart-item-text">
+                      [자연실록] 무항생제 두마리 통닭 550gX2입(삼계탕용)
+                    </div>
+                    <div class="check-num">
+                      <tr style="text-align: center">
+                        <td>
+                          <button type="button" onclick="fnCalCount('p',this);">
+                            +
+                          </button>
+                          <input
+                            type="text"
+                            name="pop_out"
+                            value="0"
+                            readonly="readonly"
+                            style="text-align: center"
+                          />
+                          <button
+                            type="button"
+                            onclick="fnCalCount('m', this);"
+                          >
+                            -
+                          </button>
+                        </td>
+                      </tr>
+                    </div>
+                    <div class="cart-item-price">
+                      <span>7,920원</span>
+                      <strike>12,900원</strike>
+                    </div>
+                    <div class="x-mark"><i class="fa-solid fa-xmark"></i></div>
+                  </div>
+                </div>
+              </div>
+              <div id="cold-item-example">
+                <div id="cold-logo">
+                  <img src="./cart_img/prozen-item.png" alt="cold-" />
+                  <span>냉동 상품</span>
+                </div>
+                <div class="checkbox">
+                  <label class="custom-checkbox">
+                    <input type="checkbox" id="selectAll" />
+                    <span class="checkmark"></span>
+                  </label>
+                  <div id="cold-item">
+                    <img src="./cart_img/rec_item01.jpg" alt="item" />
+                    <div class="cart-item-text">
+                      [자연실록] 무항생제 두마리 통닭 550gX2입(삼계탕용)
+                    </div>
+                    <div class="check-num">
+                      <tr style="text-align: center">
+                        <td>
+                          <button type="button" onclick="fnCalCount('p',this);">
+                            +
+                          </button>
+                          <input
+                            type="text"
+                            name="pop_out"
+                            value="0"
+                            readonly="readonly"
+                            style="text-align: center"
+                          />
+                          <button
+                            type="button"
+                            onclick="fnCalCount('m', this);"
+                          >
+                            -
+                          </button>
+                        </td>
+                      </tr>
+                    </div>
+                    <div class="cart-item-price">
+                      <span>7,920원</span>
+                      <strike>12,900원</strike>
+                    </div>
+                    <div class="x-mark"><i class="fa-solid fa-xmark"></i></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checkbox">
+          <label class="custom-checkbox">
+            <input type="checkbox" id="selectAll" />
+            <span class="checkmark"></span>
+            전체선택(0/0)
+          </label>
+          <span>|</span>
+          <label>
+            <span class="checkmark"></span>
+            선택삭제
+          </label>
+        </div>
+      </section>
+      <section id="cart-order-box">
+        <div class="delivery_info">
+          <div class="delivery_logo">
+            <img src="./cart_img/map-pin.png" alt="map-pin" />
+            <h3>배송지</h3>
+          </div>
+          <div class="delivery_search">
+            <span
+              ><b>배송지를 등록</b>하고<br />구매가능한 상품을 확인하세요</span
+            >
+            <input class="button" type="button" value="주소 검색" />
+          </div>
+        </div>
+        <div class="cart-price-box">
+          <div class="discount-price">
+            <div class="price">
+              <span>상품금액</span>
+              <span>41,500원</span>
+            </div>
+            <div class="price">
+              <span>상품할인금액</span>
+              <span>-13,170원</span>
+            </div>
+            <div class="price">
+              <span>배송비</span>
+              <span>0원</span>
+            </div>
+          </div>
+          <div class="total-price">
+            <span>결제예정금액</span>
+            <span>28,330원</span>
+          </div>
+        </div>
+        <div class="order-btn">
+          <input type="button" value="주문하기" />
+          <span
+            >[주문완료] 상태일 경우에만 취소 가능합니다.
+            <br />[마이컬리]>주문내역 상세 페이지]에서 직접 취소하실 수
+            있습니다.<br />[마이컬리 > 주문내역 상세페이지] 에서 직접 취소하실
+            수 있습니다. 쿠폰, 적립금 사용 금액을 제외한 실 결제 금액 기준으로
+            최종 산정됩니다. 상품별로 적립 지급 기준이 다를 수 있습니다.(상품
+            상세 페이지에서 확인 가능합니다)</span
+          >
+        </div>
+      </section>
+    </main>
+    <section id="cart-rec-box">
+      <div class="cart-rec-box">
+        <div class="cart-rec-text">고객님, 이런 상품은 어떠세요?</div>
+        <div class="rec-item-box">
+          <div class="cart-rec-item">
+            <div class="cart-rec-img">
+              <img src="./cart_img/rec_item01.jpg" />
+            </div>
+            <div class="rec-price-coupon">
+              <span>+30%쿠폰</span>
+            </div>
+            <div class="opacity_text">
+              <span>최대혜택가 5,334원</span>
+            </div>
+            <div class="cart-rec-btn">
+              <input type="button" value="담기" />
+            </div>
+            <div class="cart_rec_text">
+              <div class="cart_rec_price">
+                <ul>
+                  <li>[자연실록] 무항생제 삼계탕용 두마리 통닭 (550gX2입)</li>
+                  <li>12,700원</li>
+                  <li>40%</li>
+                  <li>7,620원</li>
+                </ul>
+              </div>
+              <div class="comment_text">
+                <i class="fa-regular fa-comment-dots"></i>
+                <p>9,999+</p>
+              </div>
+            </div>
+          </div>
+          <div class="cart-rec-item">
+            <div class="cart-rec-img">
+              <img src="./cart_img/rec_item01.jpg" />
+            </div>
+            <div class="rec-price-coupon">
+              <span>+30%쿠폰</span>
+            </div>
+            <div class="opacity_text">
+              <span>최대혜택가 5,334원</span>
+            </div>
+            <div class="cart-rec-btn">
+              <input type="button" value="담기" />
+            </div>
+            <div class="cart_rec_text">
+              <div class="cart_rec_price">
+                <ul>
+                  <li>[자연실록] 무항생제 삼계탕용 두마리 통닭 (550gX2입)</li>
+                  <li>12,700원</li>
+                  <li>40%</li>
+                  <li>7,620원</li>
+                </ul>
+              </div>
+              <div class="comment_text">
+                <i class="fa-regular fa-comment-dots"></i>
+                <p>9,999+</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
