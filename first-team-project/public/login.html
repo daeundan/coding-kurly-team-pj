@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--fontawsome-->
+    <script
+      src="https://kit.fontawesome.com/f75707ac34.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--coustom css js-->
+    <link rel="stylesheet" href="./css/login.css" />
+    <script defer src="./js/login.js"></script>
+    <script defer src="./js/headerCategory.js"></script>
+    <script defer src="./js/search.js"></script>
+    <title>마켓컬리</title>
+  </head>
+  <body>
+    <header>
+      <div class="header_wrapper">
+        <div class="inner">
+          <div class="header_top_bar">
+            <span><a href="./join.html">회원가입</a></span>
+            <span><a href="./login.html">로그인</a></span>
+            <!-- <span><a></a></span>
+            <span><a>로그아웃</a></span> -->
+            <span class="customerServiceBtn"
+              >고객센터 <i class="fa-solid fa-caret-down"></i>
+              <ul class="customerService">
+                <li>공지사항</li>
+                <li>자주하는 질문</li>
+                <li>1:1 문의</li>
+                <li>대량주문 문의</li>
+              </ul>
+            </span>
+          </div>
+          <div class="header_main">
+            <div class="header_main_left">
+              <a href="./index.html">
+                <img class="logo" src="./img/logo.svg" alt="logo" />
+              </a>
+
+              <span><a href="./index.html">마켓컬리</a></span>
+            </div>
+            <div class="header_main_center">
+              <form action="search.html" method="get">
+                <input
+                  class="searchInput"
+                  type="text"
+                  name="query"
+                  placeholder="검색어를 입력해주세요"
+                />
+                <button type="submit">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
+            </div>
+            <div class="header_main_right">
+              <span><i class="fa-solid fa-location-dot"></i></span>
+              <span><i class="fa-solid fa-heart"></i></span>
+              <span>
+                <a href="./cart.html">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="header_sticky">
+      <div class="inner">
+        <div class="header_bottom_gnb">
+          <div class="lnb">
+            <i class="fa-solid fa-bars"></i>
+            <span>카테고리</span>
+            <div class="category">
+              <!-- <div>
+                <img src="./img/categoryIcon/1.png" alt="" />
+                <span>컬리세일</span>
+              </div> -->
+            </div>
+            <div class="subCategory">
+              <!-- <div>
+                <span>123</span>
+              </div>
+              <div>
+                <span>123</span>
+              </div> -->
+            </div>
+          </div>
+          <div class="gnb">
+            <a href="./search.html">
+              <span>베스트</span>
+            </a>
+            <a href="./search.html">
+              <span>알뜰쇼핑</span>
+            </a>
+            <a href="./search.html">
+              <span>특가혜택</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="login_container">
+      <!--modal back-->
+      <div id="blackB"></div>
+      <div class="login_inner">
+        <!--modal-->
+        <div class="mobileHeader">
+          <div class="mobileHeaderInner">
+            <a class="mobileClose" href="#"
+              ><i class="fa-solid fa-chevron-left"></i
+            ></a>
+            <div class="mobile-cart-title">로그인</div>
+          </div>
+        </div>
+        <div id="longModal">
+          <div>
+            <h1></h1>
+            <h2 class="close">닫기</h2>
+          </div>
+        </div>
+        <!--main-->
+        <div class="login_wrap">
+          <h1 class="login_title">로그인</h1>
+          <div class="login_main">
+            <form action="http://localhost:3000" method="get" id="login_form">
+              <div class="id_password">
+                <input
+                  type="text"
+                  name="id"
+                  id="login_id"
+                  placeholder="아이디를 입력해주세요"
+                />
+                <div class="errorId"></div>
+                <input
+                  type="password"
+                  name="password"
+                  id="login_password"
+                  placeholder="비밀번호를 입력해주세요"
+                />
+              </div>
+              <div class="find_container">
+                <a href="#none">아이디 찾기</a>
+                <span>|</span>
+                <a href="#none">비밀번호 찾기</a>
+              </div>
+              <div class="automatic">
+                <div class="autonumBox">
+                  <div class="autonum" draggable="true"></div>
+                </div>
+                <input type="text" name="autoN" id="autoN" />
+              </div>
+              <div class="loginBtn_inner">
+                <input class="login" type="submit" value="로그인" />
+                <a href="./join.html">
+                  <input class="join" type="button" value="회원가입" />
+                </a>
+              </div>
+            </form>
+          </div>
+          <div class="login_easy">
+            <div>
+              <a href="#none">간편 로그인</a>
+              <span>/</span>
+              <a href="./join.html">회원가입</a>
+            </div>
+            <ul>
+              <li>
+                <a href="#none"
+                  ><img src="./img/login_img/kakao.png" alt="kakao"
+                /></a>
+              </li>
+              <li>
+                <a href="#none"
+                  ><img src="./img/login_img/naver.png" alt="naver"
+                /></a>
+              </li>
+              <li>
+                <a href="#none"
+                  ><img src="./img/login_img/face.png" alt="facebok"
+                /></a>
+              </li>
+              <li>
+                <a href="#none"
+                  ><img src="./img/login_img/insta.png" alt="insta"
+                /></a>
+              </li>
+              <li>
+                <a href="#none"
+                  ><img src="./img/login_img/googlePlus.png" alt="google"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer_wrapper">
+        <div class="inner">
+          <div class="footer_left">
+            <h1>고객행복센터</h1>
+            <span><b>1644-1107</b> 월~토요일 | 오전 7시 - 오후 6시</span>
+            <div class="footer_left_info">
+              <div class="left_info">
+                <h2>카카오톡 문의</h2>
+                <div>
+                  <span>월~토요일 | 오전 7시 - 오후 6시</span>
+                  <span>일/공휴일 | 오전 7시 - 오후 1시</span>
+                </div>
+              </div>
+              <div class="left_info">
+                <h2>1:1문의</h2>
+                <div>
+                  <span>365일</span>
+                  <span>고객센터 운영시간에 순차적으로 답변드리겠습니다.</span>
+                </div>
+              </div>
+              <div class="left_info">
+                <h2>대량주문 문의</h2>
+                <div>
+                  <span>월~금요일 | 오전 9시 - 오후 6시</span>
+                  <span>점심시간 | 낮 12시 - 오후 1시</span>
+                </div>
+              </div>
+              <span>비회원 문의 : help@kurlycorp.com</span>
+            </div>
+          </div>
+          <div class="footer_right">
+            <div class="footer_right_first">
+              <span>컬리소개</span>
+              <span>컬리소개영상</span>
+              <span>투자정보</span>
+              <span>인재채용</span>
+              <span>이용약관</span>
+              <span>개인정보처리방침</span>
+              <span>이용안내</span>
+            </div>
+            <div class="footer_right_second">
+              <h4>
+                법인명 (상호):주식회사 컬리 | 사업자등록번호:261-81-23567
+                <b>사업자정보 확인</b>
+              </h4>
+              <h4>통신판매업:제 2018-서울강남-01646 호</h4>
+              <h4>
+                주소:서울특별시 강남구 테헤란로 133, 18층(역삼동) |
+                대표이사:김슬아
+              </h4>
+              <h4>채용문의:<b>recruit@kurlycorp.com</b></h4>
+              <h4>팩스:070-7500-6098</h4>
+            </div>
+            <div class="footer_right_third">
+              <a href="https://www.instagram.com/marketkurly/" target="_blank">
+                <img src="./img/insta.png" alt="insta" />
+              </a>
+              <a href="https://www.facebook.com/Marketkurly/" target="_blank">
+                <img src="./img/face.png" alt="face" />
+              </a>
+              <a href="https://blog.naver.com/marketkurly" target="_blank">
+                <img src="./img/Nblog.png" alt="Nblog" />
+              </a>
+              <a href="https://m.post.naver.com/marketkurly" target="_blank">
+                <img src="./img/Npost.png" alt="Npost" />
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCfpdjL5pl-1qKT7Xp4UQzQg"
+                target="_blank"
+              >
+                <img src="./img/youtube.png" alt="youtube" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

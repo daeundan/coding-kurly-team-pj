@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/4dc0b0ef48.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom css & js -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/headerCategory.js"></script>
+    <script defer src="./js/search.js"></script>
+    <title>마켓컬리</title>
+  </head>
+  <body>
+    <header>
+      <div class="header_wrapper">
+        <div class="inner">
+          <div class="header_top_bar">
+            <span><a href="./join.html">회원가입</a></span>
+            <span><a href="./login.html">로그인</a></span>
+            <span class="customerServiceBtn"
+              >고객센터 <i class="fa-solid fa-caret-down"></i>
+              <ul class="customerService">
+                <li>공지사항</li>
+                <li>자주하는 질문</li>
+                <li>1:1 문의</li>
+                <li>대량주문 문의</li>
+              </ul>
+            </span>
+          </div>
+          <div class="header_main">
+            <div class="header_main_left">
+              <a href="./index.html">
+                <img class="logo" src="./img/logo.svg" alt="logo" />
+              </a>
+              <a class="mobileLogin" href="./login.html"
+                ><i class="fa-solid fa-user"></i
+              ></a>
+              <img class="mobileLogo" src="./img/mobileLogo.png" alt="logo" />
+              <span><a href="./index.html">마켓컬리</a></span>
+              <a class="mobileToggle" href="./mobileCategory.html"
+                ><i class="fa-solid fa-bars"></i
+              ></a>
+            </div>
+            <div class="header_main_center">
+              <form action="search.html" method="get">
+                <input
+                  class="searchInput"
+                  type="text"
+                  name="query"
+                  placeholder="검색어를 입력해주세요"
+                />
+                <button type="submit">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
+            </div>
+            <div class="header_main_right">
+              <span><i class="fa-solid fa-location-dot"></i></span>
+              <span><i class="fa-solid fa-heart"></i></span>
+              <span>
+                <a href="./cart.html">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="header_sticky">
+      <div class="inner">
+        <div class="header_bottom_gnb">
+          <div class="lnb">
+            <i class="fa-solid fa-bars"></i>
+            <span>카테고리</span>
+            <div class="category">
+              <!-- <div>
+                <img src="./img/categoryIcon/1.png" alt="" />
+                <span>컬리세일</span>
+              </div> -->
+            </div>
+            <div class="subCategory">
+              <!-- <div>
+                <span>123</span>
+              </div>
+              <div>
+                <span>123</span>
+              </div> -->
+            </div>
+          </div>
+          <div class="gnb">
+            <a href="./search.html">
+              <span>베스트</span>
+            </a>
+            <a href="./search.html">
+              <span>알뜰쇼핑</span>
+            </a>
+            <a href="./search.html">
+              <span>특가혜택</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="app_container">
+      <main id="main_banner">
+        <div class="bg_imgPC"></div>
+        <div class="bg_imgMO"></div>
+        <div class="main_banner_arrow">
+          <div class="main_banner_btn left">
+            <i id="leftArrow" class="fa-solid fa-chevron-left"></i>
+          </div>
+          <div class="main_banner_btn right">
+            <i id="rightArrow" class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+        <div class="main_banner_counter">
+          <div class="counter_wrapper">
+            <span class="now_counter"></span>
+            /
+            <span class="all_counter"></span>
+          </div>
+        </div>
+      </main>
+      <section id="category_area">
+        <div class="category_items">
+          <a href="./search.html">
+            <div class="category_item">
+              <div class="category_item_icon">
+                <div class="icon_img">
+                  <img src="./img/main/cate_icon_01.png" alt="icon1" />
+                </div>
+                <div class="icon_bg"></div>
+              </div>
+              <div class="category_item_text">뷰티컬리</div>
+            </div>
+          </a>
+          <a href="./search.html">
+            <div class="category_item">
+              <div class="category_item_icon">
+                <div class="icon_img">
+                  <img src="./img/main/cate_icon_02.png" alt="icon2" />
+                </div>
+                <div class="icon_bg"></div>
+              </div>
+              <div class="category_item_text">리빙컬리</div>
+            </div>
+          </a>
+          <a href="./search.html">
+            <div class="category_item">
+              <div class="category_item_icon">
+                <div class="icon_img">
+                  <img src="./img/main/cate_icon_03.png" alt="icon3" />
+                </div>
+                <div class="icon_bg"></div>
+              </div>
+              <div class="category_item_text">오늘의 특가</div>
+            </div>
+          </a>
+          <a href="./search.html">
+            <div class="category_item">
+              <div class="category_item_icon">
+                <div class="icon_img">
+                  <img src="./img/main/cate_icon_04.png" alt="icon4" />
+                </div>
+                <div class="icon_bg"></div>
+              </div>
+              <div class="category_item_text">BEST상품</div>
+            </div>
+          </a>
+          <a href="./search.html">
+            <div class="category_item">
+              <div class="category_item_icon">
+                <div class="icon_img">
+                  <img src="./img/main/cate_icon_07.png" alt="icon7" />
+                </div>
+                <div class="icon_bg"></div>
+              </div>
+              <div class="category_item_text">Only KURLY</div>
+            </div>
+          </a>
+          <a href="./search.html">
+            <div class="category_item">
+              <div class="category_item_icon">
+                <div class="icon_img">
+                  <img src="./img/main/cate_icon_08.png" alt="icon8" />
+                </div>
+                <div class="icon_bg"></div>
+              </div>
+              <div class="category_item_text">다이어트</div>
+            </div>
+          </a>
+          <a href="./search.html">
+            <div class="category_item">
+              <div class="category_item_icon">
+                <div class="icon_img">
+                  <img src="./img/main/cate_icon_05.png" alt="icon5" />
+                </div>
+                <div class="icon_bg"></div>
+              </div>
+              <div class="category_item_text">쿠폰/혜택</div>
+            </div>
+          </a>
+          <a href="./search.html">
+            <div class="category_item">
+              <div class="category_item_icon">
+                <div class="icon_img">
+                  <img src="./img/main/cate_icon_06.png" alt="icon6" />
+                </div>
+                <div class="icon_bg"></div>
+              </div>
+              <div class="category_item_text">배송조회</div>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section id="live_area">
+        <h2>📢라이브 모아보기</h2>
+        <p>라이브에서만 만나볼 수 있는 혜택</p>
+        <div class="live_slide_area">
+          <div class="live_items">
+            <div class="live_item">
+              <div class="live_video">
+                <video
+                  src="./img/main/live_video01.mp4"
+                  muted
+                  loop
+                  playsinline
+                ></video>
+              </div>
+              <div class="live_video_ui">
+                <div class="video_ui_top">
+                  <div class="video_ui_onair">ON AIR</div>
+                  <div class="video_ui_icon">
+                    <div class="heart_icon">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="./img/main/share_icon.png" alt="share_icon" />
+                  </div>
+                </div>
+                <div class="video_ui_bottom">
+                  <div class="video_ui_name">
+                    <div class="ui_brand">[프레시지]</div>
+                    <div class="ui_name">최현석의 맥시칸 파히타 838g</div>
+                  </div>
+                  <div class="video_ui_price">
+                    <div class="ui_view">
+                      <i class="fa-solid fa-user"></i>
+                      <div class="view_text">2,215</div>
+                    </div>
+                    <div class="ui_price">
+                      <div class="price">25,000원</div>
+                      <div class="sale_price">
+                        <div class="sale_rate">40%</div>
+                        <div class="sale_price_won">19,000원</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="./productdetail.html?id=2"> </a>
+            </div>
+            <div class="live_item">
+              <div class="live_video">
+                <video
+                  src="./img/main/live_video02.mp4"
+                  muted
+                  loop
+                  playsinline
+                ></video>
+              </div>
+              <div class="live_video_ui">
+                <div class="video_ui_top">
+                  <div class="video_ui_onair">ON AIR</div>
+                  <div class="video_ui_icon">
+                    <div class="heart_icon">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="./img/main/share_icon.png" alt="share_icon" />
+                  </div>
+                </div>
+                <div class="video_ui_bottom">
+                  <div class="video_ui_name">
+                    <div class="ui_brand">[프레시지]</div>
+                    <div class="ui_name">최현석의 맥시칸 파히타 838g</div>
+                  </div>
+                  <div class="video_ui_price">
+                    <div class="ui_view">
+                      <i class="fa-solid fa-user"></i>
+                      <div class="view_text">8,124</div>
+                    </div>
+                    <div class="ui_price">
+                      <div class="price">25,000원</div>
+                      <div class="sale_price">
+                        <div class="sale_rate">40%</div>
+                        <div class="sale_price_won">19,000원</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="./productdetail.html?id=6"></a>
+            </div>
+            <div class="live_item">
+              <div class="live_video">
+                <video
+                  src="./img/main/live_video03.mp4"
+                  muted
+                  loop
+                  playsinline
+                ></video>
+              </div>
+              <div class="live_video_ui">
+                <div class="video_ui_top">
+                  <div class="video_ui_onair">ON AIR</div>
+                  <div class="video_ui_icon">
+                    <div class="heart_icon">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="./img/main/share_icon.png" alt="share_icon" />
+                  </div>
+                </div>
+                <div class="video_ui_bottom">
+                  <div class="video_ui_name">
+                    <div class="ui_brand">[프레시지]</div>
+                    <div class="ui_name">최현석의 맥시칸 파히타 838g</div>
+                  </div>
+                  <div class="video_ui_price">
+                    <div class="ui_view">
+                      <i class="fa-solid fa-user"></i>
+                      <div class="view_text">4,232</div>
+                    </div>
+                    <div class="ui_price">
+                      <div class="price">25,000원</div>
+                      <div class="sale_price">
+                        <div class="sale_rate">40%</div>
+                        <div class="sale_price_won">19,000원</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="./productdetail.html?id=9"> </a>
+            </div>
+            <div class="live_item">
+              <div class="live_video">
+                <video
+                  src="./img/main/live_video04.mp4"
+                  muted
+                  loop
+                  playsinline
+                ></video>
+              </div>
+              <div class="live_video_ui">
+                <div class="video_ui_top">
+                  <div class="video_ui_onair">ON AIR</div>
+                  <div class="video_ui_icon">
+                    <div class="heart_icon">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="./img/main/share_icon.png" alt="share_icon" />
+                  </div>
+                </div>
+                <div class="video_ui_bottom">
+                  <div class="video_ui_name">
+                    <div class="ui_brand">[프레시지]</div>
+                    <div class="ui_name">최현석의 맥시칸 파히타 838g</div>
+                  </div>
+                  <div class="video_ui_price">
+                    <div class="ui_view">
+                      <i class="fa-solid fa-user"></i>
+                      <div class="view_text">7,128</div>
+                    </div>
+                    <div class="ui_price">
+                      <div class="price">25,000원</div>
+                      <div class="sale_price">
+                        <div class="sale_rate">40%</div>
+                        <div class="sale_price_won">19,000원</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="./productdetail.html?id=10"> </a>
+            </div>
+            <div class="live_item">
+              <div class="live_video">
+                <video
+                  src="./img/main/live_video05.mp4"
+                  muted
+                  loop
+                  playsinline
+                ></video>
+              </div>
+              <div class="live_video_ui">
+                <div class="video_ui_top">
+                  <div class="video_ui_onair">ON AIR</div>
+                  <div class="video_ui_icon">
+                    <div class="heart_icon">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <img src="./img/main/share_icon.png" alt="share_icon" />
+                  </div>
+                </div>
+                <div class="video_ui_bottom">
+                  <div class="video_ui_name">
+                    <div class="ui_brand">[프레시지]</div>
+                    <div class="ui_name">최현석의 맥시칸 파히타 838g</div>
+                  </div>
+                  <div class="video_ui_price">
+                    <div class="ui_view">
+                      <i class="fa-solid fa-user"></i>
+                      <div class="view_text">6,758</div>
+                    </div>
+                    <div class="ui_price">
+                      <div class="price">25,000원</div>
+                      <div class="sale_price">
+                        <div class="sale_rate">40%</div>
+                        <div class="sale_price_won">19,000원</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="./productdetail.html?id=17"> </a>
+            </div>
+            <div class="live_item_more">
+              <a href="./search.html">
+                <div class="live_all_area">
+                  <div class="live_all_arrow_area">
+                    <div class="live_all_arrow">
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="live_all_text">전체보기</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="live_slide_arrow">
+          <div class="live_slide_btn left">
+            <i id="LIVE_leftArrow" class="fa-solid fa-chevron-left"></i>
+          </div>
+          <div class="live_slide_btn right">
+            <i id="LIVE_rightArrow" class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+      </section>
+      <section id="sub_banner">
+        <img class="pc_subbanner" src="./img/main/sub_01.jpg" alt="sub01" />
+        <img class="mo_subbanner" src="./img/main/m/sub_1.png" alt="sub01" />
+      </section>
+      <section id="today_area">
+        <div class="today_contents_area">
+          <div class="today_first_area">
+            <h2>🎉오늘의 특가</h2>
+            <p>망설이면 늦어요!</p>
+            <div class="time_area">
+              <div class="clock_icon">
+                <div class="clock_back"></div>
+                <div class="clock_hand1"></div>
+                <div class="clock_hand2"></div>
+              </div>
+              <div id="timer24" class="timer_number">23:59:59</div>
+            </div>
+          </div>
+          <div class="today_item_area">
+            <div class="product_img">
+              <a><img /></a>
+            </div>
+            <div class="product_cartin">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <p>담기</p>
+            </div>
+            <div class="product_info">
+              <a href="">
+                <p class="today_product_name">
+                  [자연실록] 무항생제 삼계탕용 두마리 통닭 (550gX2입)
+                </p>
+              </a>
+              <p class="today_price">12,700원</p>
+              <div class="today_salePrice">
+                <p class="today_rating">40%</p>
+                <p class="today_Sprice">7,620원</p>
+              </div>
+              <div class="comment_text">
+                <i class="fa-regular fa-comment-dots"></i>
+                <p class="today_Review">999+</p>
+              </div>
+            </div>
+          </div>
+          <div class="today_item_area">
+            <div class="product_img">
+              <a><img /></a>
+            </div>
+            <div class="product_cartin">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <p>담기</p>
+            </div>
+            <div class="product_info">
+              <a>
+                <p class="today_product_name">
+                  [자연실록] 무항생제 삼계탕용 두마리 통닭 (550gX2입)
+                </p>
+              </a>
+              <p class="today_price">12,700원</p>
+              <div class="today_salePrice">
+                <p class="today_rating">40%</p>
+                <p class="today_Sprice">7,620원</p>
+              </div>
+              <div class="comment_text">
+                <i class="fa-regular fa-comment-dots"></i>
+                <p class="today_Review">999+</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="today_area">
+        <div class="today_contents_area">
+          <div class="today_first_area">
+            <h2>🛒한정수량</h2>
+            <p>수량이 얼마 남지 않았어요!</p>
+            <div class="time_area2">
+              <div class="clock_icon">
+                <div class="clock_back"></div>
+                <div class="clock_hand1"></div>
+                <div class="clock_hand2"></div>
+              </div>
+              <div id="timer500" class="timer_number">500개</div>
+            </div>
+          </div>
+          <div class="today_item_area2">
+            <div class="product_img">
+              <a>
+                <img src="./img/main/product_01.jpg" alt="" />
+              </a>
+            </div>
+            <div class="product_cartin">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <p>담기</p>
+            </div>
+            <div class="product_info">
+              <a>
+                <p class="today_product_name">
+                  [자연실록] 무항생제 삼계탕용 두마리 통닭 (550gX2입)
+                </p>
+              </a>
+              <p class="today_price">12,700원</p>
+              <div class="today_salePrice">
+                <p class="today_rating">40%</p>
+                <p class="today_Sprice">7,620원</p>
+              </div>
+              <div class="comment_text">
+                <i class="fa-regular fa-comment-dots"></i>
+                <p class="today_Review">635</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sub_banner">
+        <img class="pc_subbanner" src="./img/main/sub_02.jpg" alt="sub02" />
+        <img class="mo_subbanner" src="./img/main/m/sub_2.png" alt="sub02" />
+      </section>
+      <section class="product_list">
+        <h2>🎵인기상품</h2>
+        <p>현재 인기 상품을 확인해보세요!</p>
+        <div class="product_slide_area">
+          <div class="product_items">
+            <div class="product_item">
+              <div class="product_item_img">
+                <a>
+                  <img />
+                </a>
+                <div class="rating_coupon"></div>
+              </div>
+              <div class="product_cartin">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>담기</p>
+              </div>
+              <div class="product_item_text">
+                <a>
+                  <p class="product_name"></p>
+                </a>
+                <div class="product_item_text_bottom">
+                  <p class="product_price"></p>
+                  <div class="product_salePrice">
+                    <p class="product_rating"></p>
+                    <p class="product_Sprice"></p>
+                  </div>
+                  <div class="comment_text">
+                    <i class="fa-regular fa-comment-dots"></i>
+                    <p class="product_review"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product_item">
+              <div class="product_item_img">
+                <a>
+                  <img />
+                </a>
+                <div class="rating_coupon"></div>
+              </div>
+              <div class="product_cartin">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>담기</p>
+              </div>
+              <div class="product_item_text">
+                <a>
+                  <p class="product_name"></p>
+                </a>
+                <div class="product_item_text_bottom">
+                  <p class="product_price"></p>
+                  <div class="product_salePrice">
+                    <p class="product_rating"></p>
+                    <p class="product_Sprice"></p>
+                  </div>
+                  <div class="comment_text">
+                    <i class="fa-regular fa-comment-dots"></i>
+                    <p class="product_review"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product_item">
+              <div class="product_item_img">
+                <a>
+                  <img />
+                </a>
+                <div class="rating_coupon"></div>
+              </div>
+              <div class="product_cartin">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>담기</p>
+              </div>
+              <div class="product_item_text">
+                <a>
+                  <p class="product_name"></p>
+                </a>
+                <div class="product_item_text_bottom">
+                  <p class="product_price"></p>
+                  <div class="product_salePrice">
+                    <p class="product_rating"></p>
+                    <p class="product_Sprice"></p>
+                  </div>
+                  <div class="comment_text">
+                    <i class="fa-regular fa-comment-dots"></i>
+                    <p class="product_review"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product_item">
+              <div class="product_item_img">
+                <a>
+                  <img />
+                </a>
+                <div class="rating_coupon"></div>
+              </div>
+              <div class="product_cartin">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>담기</p>
+              </div>
+              <div class="product_item_text">
+                <a>
+                  <p class="product_name"></p>
+                </a>
+                <div class="product_item_text_bottom">
+                  <p class="product_price"></p>
+                  <div class="product_salePrice">
+                    <p class="product_rating"></p>
+                    <p class="product_Sprice"></p>
+                  </div>
+                  <div class="comment_text">
+                    <i class="fa-regular fa-comment-dots"></i>
+                    <p class="product_review"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product_item">
+              <div class="product_item_img">
+                <a>
+                  <img />
+                </a>
+                <div class="rating_coupon"></div>
+              </div>
+              <div class="product_cartin">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>담기</p>
+              </div>
+              <div class="product_item_text">
+                <a>
+                  <p class="product_name"></p>
+                </a>
+                <div class="product_item_text_bottom">
+                  <p class="product_price"></p>
+                  <div class="product_salePrice">
+                    <p class="product_rating"></p>
+                    <p class="product_Sprice"></p>
+                  </div>
+                  <div class="comment_text">
+                    <i class="fa-regular fa-comment-dots"></i>
+                    <p class="product_review"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product_item">
+              <div class="product_item_img">
+                <a>
+                  <img />
+                </a>
+                <div class="rating_coupon"></div>
+              </div>
+              <div class="product_cartin">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>담기</p>
+              </div>
+              <div class="product_item_text">
+                <a>
+                  <p class="product_name"></p>
+                </a>
+                <div class="product_item_text_bottom">
+                  <p class="product_price"></p>
+                  <div class="product_salePrice">
+                    <p class="product_rating"></p>
+                    <p class="product_Sprice"></p>
+                  </div>
+                  <div class="comment_text">
+                    <i class="fa-regular fa-comment-dots"></i>
+                    <p class="product_review"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product_item">
+              <div class="product_item_img">
+                <a>
+                  <img />
+                </a>
+                <div class="rating_coupon"></div>
+              </div>
+              <div class="product_cartin">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>담기</p>
+              </div>
+              <div class="product_item_text">
+                <a>
+                  <p class="product_name"></p>
+                </a>
+                <div class="product_item_text_bottom">
+                  <p class="product_price"></p>
+                  <div class="product_salePrice">
+                    <p class="product_rating"></p>
+                    <p class="product_Sprice"></p>
+                  </div>
+                  <div class="comment_text">
+                    <i class="fa-regular fa-comment-dots"></i>
+                    <p class="product_review"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product_item_more">
+              <a href="./search.html">
+                <div class="product_all_area">
+                  <div class="product_all_arrow_area">
+                    <div class="product_all_arrow">
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="product_all_text">전체보기</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="./search.html">
+          <div class="mo_all_view">전체보기</div>
+        </a>
+        <div class="product_slide_arrow">
+          <div class="product_slide_btn left">
+            <i id="product1_leftArrow" class="fa-solid fa-chevron-left"></i>
+          </div>
+          <div class="product_slide_btn right">
+            <i id="product1_rightArrow" class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+      </section>
+      <section class="product_list">
+        <h2>✨신상품</h2>
+        <p>새로 등록된 상품을 확인해보세요!</p>
+        <div class="product_slide_area">
+          <div class="product_items">
+            <div class="product_item">
+              <div class="product_item_img">
+                <a>
+                  <img />
+                </a>
+                <div class="rating_coupon"></div>
+              </div>
+              <div class="product_cartin">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>담기</p>
+              </div>
+              <div class="product_item_text">
+                <a>
+                  <p class="product_name"></p>
+                </a>
+                <div class="product_item_text_bottom">
+                  <p class="product_price"></p>
+                  <div class="product_salePrice">
+                    <p class="product_rating"></p>
+                    <p class="product_Sprice"></p>
+                  </div>
+                  <div class="comment_text">
+                    <i class="fa-regular fa-comment-dots"></i>
+                    <p class="product_review"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product_item">
+              <div class="product_item_img">
+                <a>
+                  <img />
+                </a>
+                <div class="rating_coupon"></div>
+              </div>
+              <div class="product_cartin">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>담기</p>
+              </div>
+              <div class="product_item_text">
+                <a>
+                  <p class="product_name"></p>
+                </a>
+                <div class="product_item_text_bottom">
+                  <p class="product_price"></p>
+                  <div class="product_salePrice">
+                    <p class="product_rating"></p>
+                    <p class="product_Sprice"></p>
+                  </div>
+                  <div class="comment_text">
+                    <i class="fa-regular fa-comment-dots"></i>
+                    <p class="product_review"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product_item">
+              <div class="product_item_img">
+                <a>
+                  <img />
+                </a>
+                <div class="rating_coupon"></div>
+              </div>
+              <div class="product_cartin">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>담기</p>
+              </div>
+              <div class="product_item_text">
+                <a>
+                  <p class="product_name"></p>
+                </a>
+                <div class="product_item_text_bottom">
+                  <p class="product_price"></p>
+                  <div class="product_salePrice">
+                    <p class="product_rating"></p>
+                    <p class="product_Sprice"></p>
+                  </div>
+                  <div class="comment_text">
+                    <i class="fa-regular fa-comment-dots"></i>
+                    <p class="product_review"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product_item">
+              <div class="product_item_img">
+                <a>
+                  <img />
+                </a>
+                <div class="rating_coupon"></div>
+              </div>
+              <div class="product_cartin">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>담기</p>
+              </div>
+              <div class="product_item_text">
+                <a>
+                  <p class="product_name"></p>
+                </a>
+                <div class="product_item_text_bottom">
+                  <p class="product_price"></p>
+                  <div class="product_salePrice">
+                    <p class="product_rating"></p>
+                    <p class="product_Sprice"></p>
+                  </div>
+                  <div class="comment_text">
+                    <i class="fa-regular fa-comment-dots"></i>
+                    <p class="product_review"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product_item">
+              <div class="product_item_img">
+                <a>
+                  <img />
+                </a>
+                <div class="rating_coupon"></div>
+              </div>
+              <div class="product_cartin">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>담기</p>
+              </div>
+              <div class="product_item_text">
+                <a>
+                  <p class="product_name"></p>
+                </a>
+                <div class="product_item_text_bottom">
+                  <p class="product_price"></p>
+                  <div class="product_salePrice">
+                    <p class="product_rating"></p>
+                    <p class="product_Sprice"></p>
+                  </div>
+                  <div class="comment_text">
+                    <i class="fa-regular fa-comment-dots"></i>
+                    <p class="product_review"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product_item">
+              <div class="product_item_img">
+                <a>
+                  <img />
+                </a>
+                <div class="rating_coupon"></div>
+              </div>
+              <div class="product_cartin">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>담기</p>
+              </div>
+              <div class="product_item_text">
+                <a>
+                  <p class="product_name"></p>
+                </a>
+                <div class="product_item_text_bottom">
+                  <p class="product_price"></p>
+                  <div class="product_salePrice">
+                    <p class="product_rating"></p>
+                    <p class="product_Sprice"></p>
+                  </div>
+                  <div class="comment_text">
+                    <i class="fa-regular fa-comment-dots"></i>
+                    <p class="product_review"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product_item">
+              <div class="product_item_img">
+                <a>
+                  <img />
+                </a>
+                <div class="rating_coupon"></div>
+              </div>
+              <div class="product_cartin">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>담기</p>
+              </div>
+              <div class="product_item_text">
+                <a>
+                  <p class="product_name"></p>
+                </a>
+                <div class="product_item_text_bottom">
+                  <p class="product_price"></p>
+                  <div class="product_salePrice">
+                    <p class="product_rating"></p>
+                    <p class="product_Sprice"></p>
+                  </div>
+                  <div class="comment_text">
+                    <i class="fa-regular fa-comment-dots"></i>
+                    <p class="product_review"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product_item_more">
+              <a href="./search.html">
+                <div class="product_all_area">
+                  <div class="product_all_arrow_area">
+                    <div class="product_all_arrow">
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="product_all_text">전체보기</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="./search.html">
+          <div class="mo_all_view">전체보기</div>
+        </a>
+        <div class="product_slide_arrow">
+          <div class="product_slide_btn left">
+            <i id="product2_leftArrow" class="fa-solid fa-chevron-left"></i>
+          </div>
+          <div class="product_slide_btn right">
+            <i id="product2_rightArrow" class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="modal_area">
+      <div id="overlay"></div>
+      <div id="modal">
+        <div class="modal_top">
+          <div class="modal_img"></div>
+          <div class="modal_product_name">
+            [자연실록] 무항생제 삼계탕용 두마리 통닭 (550gX2입)
+          </div>
+        </div>
+        <div class="modal_middle">
+          <div class="modal_subname">
+            [자연실록] 무항생제 삼계탕용 두마리 통닭 (550gX2입)
+          </div>
+          <div class="modal_price_counter">
+            <div class="modal_price">
+              <div class="modal_discount_price">7,920원</div>
+              <div class="modal_Wprice">12,900원</div>
+            </div>
+            <div class="modal_counter">
+              <span>-</span>
+              <span></span>
+              <span>+</span>
+            </div>
+          </div>
+        </div>
+        <div class="modal_bottom">
+          <div class="modal_totalprice">
+            <div>합계</div>
+            <div class="totalprice"><span>7,920</span>원</div>
+          </div>
+          <div class="modal_buttons">
+            <div class="button_cancle">취소</div>
+            <div class="button_cartin">장바구니 담기</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer_wrapper">
+        <div class="inner">
+          <div class="footer_left">
+            <h1>고객행복센터</h1>
+            <span><b>1644-1107</b> 월~토요일 | 오전 7시 - 오후 6시</span>
+            <div class="footer_left_info">
+              <div class="left_info">
+                <h2>카카오톡 문의</h2>
+                <div>
+                  <span>월~토요일 | 오전 7시 - 오후 6시</span>
+                  <span>일/공휴일 | 오전 7시 - 오후 1시</span>
+                </div>
+              </div>
+              <div class="left_info">
+                <h2>1:1문의</h2>
+                <div>
+                  <span>365일</span>
+                  <span>고객센터 운영시간에 순차적으로 답변드리겠습니다.</span>
+                </div>
+              </div>
+              <div class="left_info">
+                <h2>대량주문 문의</h2>
+                <div>
+                  <span>월~금요일 | 오전 9시 - 오후 6시</span>
+                  <span>점심시간 | 낮 12시 - 오후 1시</span>
+                </div>
+              </div>
+              <span>비회원 문의 : help@kurlycorp.com</span>
+            </div>
+          </div>
+          <div class="footer_right">
+            <div class="footer_right_first">
+              <span>컬리소개</span>
+              <span>컬리소개영상</span>
+              <span>투자정보</span>
+              <span>인재채용</span>
+              <span>이용약관</span>
+              <span>개인정보처리방침</span>
+              <span>이용안내</span>
+            </div>
+            <div class="footer_right_second">
+              <h4>
+                법인명 (상호):주식회사 컬리 | 사업자등록번호:261-81-23567
+                <b>사업자정보 확인</b>
+              </h4>
+              <h4>통신판매업:제 2018-서울강남-01646 호</h4>
+              <h4>
+                주소:서울특별시 강남구 테헤란로 133, 18층(역삼동) |
+                대표이사:김슬아
+              </h4>
+              <h4>채용문의:<b>recruit@kurlycorp.com</b></h4>
+              <h4>팩스:070-7500-6098</h4>
+            </div>
+            <div class="footer_right_third">
+              <a href="https://www.instagram.com/marketkurly/" target="_blank">
+                <img src="./img/insta.png" alt="insta" />
+              </a>
+              <a href="https://www.facebook.com/Marketkurly/" target="_blank">
+                <img src="./img/face.png" alt="face" />
+              </a>
+              <a href="https://blog.naver.com/marketkurly" target="_blank">
+                <img src="./img/Nblog.png" alt="Nblog" />
+              </a>
+              <a href="https://m.post.naver.com/marketkurly" target="_blank">
+                <img src="./img/Npost.png" alt="Npost" />
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCfpdjL5pl-1qKT7Xp4UQzQg"
+                target="_blank"
+              >
+                <img src="./img/youtube.png" alt="youtube" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

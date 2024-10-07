@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/0283eb41ff.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- slickslider -->
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <!-- custom css & JS -->
+    <link rel="stylesheet" href="./css/productdetail.css" />
+    <script defer src="./js/productdetail.js"></script>
+    <script defer src="./js/headerCategory.js"></script>
+    <script defer src="./js/search.js"></script>
+    <title>마켓컬리</title>
+  </head>
+  <body>
+    <header>
+      <div class="header_wrapper">
+        <div class="inner">
+          <div class="header_top_bar">
+            <span><a href="./join.html">회원가입</a></span>
+            <span><a href="./login.html">로그인</a></span>
+            <span class="customerServiceBtn"
+              >고객센터 <i class="fa-solid fa-caret-down"></i>
+              <ul class="customerService">
+                <li>공지사항</li>
+                <li>자주하는 질문</li>
+                <li>1:1 문의</li>
+                <li>대량주문 문의</li>
+              </ul>
+            </span>
+          </div>
+          <div class="header_main">
+            <div class="header_main_left">
+              <a href="./index.html">
+                <img class="logo" src="./img/logo.svg" alt="logo" />
+              </a>
+              <span><a href="./index.html">마켓컬리</a></span>
+            </div>
+            <div class="header_main_center">
+              <form action="search.html" method="get">
+                <input
+                  class="searchInput"
+                  type="text"
+                  name="query"
+                  placeholder="검색어를 입력해주세요"
+                />
+                <button type="submit">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
+            </div>
+            <div class="header_main_right">
+              <span><i class="fa-solid fa-location-dot"></i></span>
+              <span><i class="fa-solid fa-heart"></i></span>
+              <span>
+                <a href="./cart.html">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="header_sticky">
+      <div class="inner">
+        <div class="header_bottom_gnb">
+          <div class="lnb">
+            <i class="fa-solid fa-bars"></i>
+            <span>카테고리</span>
+            <div class="category">
+              <!-- <div>
+                <img src="./img/categoryIcon/1.png" alt="" />
+                <span>컬리세일</span>
+              </div> -->
+            </div>
+            <div class="subCategory">
+              <!-- <div>
+                <span>123</span>
+              </div>
+              <div>
+                <span>123</span>
+              </div> -->
+            </div>
+          </div>
+          <div class="gnb">
+            <a href="./search.html">
+              <span>베스트</span>
+            </a>
+            <a href="./search.html">
+              <span>알뜰쇼핑</span>
+            </a>
+            <a href="./search.html">
+              <span>특가혜택</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal_area"></div>
+    <section class="container">
+      <div class="inner">
+        <a href="#" class="topButton">
+          <i class="fa-solid fa-circle-arrow-up"></i>
+        </a>
+        <div class="mobile_header">
+          <div class="mobile_header_wrap">
+            <div class="top">
+              <a class="mobileClose"
+                ><i class="fa-solid fa-chevron-left"></i
+              ></a>
+              <span class="mobileHeaderTitle"></span>
+              <div>
+                <a href="./cart.html"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="productInfo">
+          <div class="info_img thumbnail">
+            <!-- <img
+              src="./img/productdetail/c7e07ca0-ef4f-428b-8ffb-6ed11e389257.jpg"
+            /> -->
+          </div>
+          <div class="info_desc">
+            <div class="desc_header">
+              <div class="desc_title">
+                <div class="subtitle">
+                  <span>샛별배송</span>
+                  <span class="frozen"></span>
+                </div>
+                <div class="title">
+                  <h1 class="productName">
+                    <!-- [금주의라면]농심 컵라면 7종 (택3) -->
+                  </h1>
+                  <h4 class="description"></h4>
+                </div>
+              </div>
+              <div class="share">
+                <img src="./img/productdetail/share.png" />
+                <div class="share_modal">
+                  <div class="top">
+                    <div>
+                      <img src="./img/insta.png" />
+                      <span>공유하기</span>
+                    </div>
+                    <div>
+                      <img src="./img/face.png" />
+                      <span>공유하기</span>
+                    </div>
+                  </div>
+                  <div class="bottom">
+                    <input
+                      type="text"
+                      value="https://www.kurly.com/goods/1000667124"
+                    />
+                    <span>URL 복사</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="desc_price">
+              <h4>
+                <del class="originalPrice"> </del>
+                <img src="./img/productdetail/Button → SVG.png" alt="" />
+              </h4>
+              <h2 class="price">
+                <b class="discount">
+                  <!-- 18% -->
+                </b>
+                <!-- 4,490원 -->
+              </h2>
+              <span>원산지: 상품설명/상세정보 참조</span>
+            </div>
+            <div class="desc_shipping">
+              <span>배송</span>
+              <div class="shipping_info">
+                <h4>샛별배송</h4>
+                <span>23시 전 주문 시 내일 아침 7시 전 도착</span>
+                <span>(대구·부산·울산 샛별배송 운영시간 별도 확인)</span>
+              </div>
+            </div>
+            <div class="desc_choice">
+              <span>상품선택</span>
+              <div class="choice_box">
+                <h4 class="productNameChoice"></h4>
+                <div>
+                  <div class="quantity">
+                    <span class="counterMinus">-</span>
+                    <span class="productCount">1</span>
+                    <span class="counterPlus">+</span>
+                  </div>
+                  <div class="price">
+                    <span><del class="originalPriceChoice"></del></span>
+                    <span class="PriceChoice"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="desc_info">
+              <div class="sale">
+                <span>첫 구매라면 <b>10,000</b>원 즉시 할인</span>
+                <a href="#none">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+              </div>
+              <div class="info">
+                <span>상세정보</span>
+                <a href="#none">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+            <div class="desc_cart">
+              <div class="item">
+                <i class="fa-regular fa-heart"></i>
+              </div>
+              <div class="item">
+                <i class="fa-regular fa-bell"></i>
+              </div>
+              <div class="mobil_item">
+                <span>바로구매</span>
+              </div>
+              <div class="cartIn">
+                <span>장바구니 담기</span>
+              </div>
+            </div>
+            <div class="desc_totalPrice">
+              <span>총 상품금액:</span>
+              <h1><b class="totalPrice"></b></h1>
+            </div>
+          </div>
+          <div class="info_modal">
+            <div class="modal_desc">
+              <span
+                >상세정보
+                <i class="fa-solid fa-xmark info_modal_closeBtn"></i>
+              </span>
+              <ul>
+                <li>
+                  <h4>판매자</h4>
+                  <div>
+                    <span>컬리</span>
+                  </div>
+                </li>
+                <li>
+                  <h4>포장타입</h4>
+                  <div>
+                    <span class="modalFrozen"></span>
+                    <h5>택배배송은 에코 포장이 스티로폼으로 대체됩니다.</h5>
+                  </div>
+                </li>
+                <li>
+                  <h4>판매단위</h4>
+                  <div>
+                    <span class="packaging"></span>
+                  </div>
+                </li>
+                <li>
+                  <h4>중량/용량</h4>
+                  <div>
+                    <span class="productWeight"></span>
+                  </div>
+                </li>
+                <li>
+                  <h4>알레르기 정보</h4>
+                  <div>
+                    <span class="allergyInfo"></span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="top_review">
+          <div class="review_wrap">
+            <div class="top_review_item item"></div>
+            <div class="top_review_item item"></div>
+            <div class="top_review_item item"></div>
+            <div class="top_review_item item"></div>
+            <div class="top_review_item item"></div>
+          </div>
+        </div>
+        <div class="productGnb">
+          <div class="gnbItem">
+            <a href="#productImg"> <span>상품설명</span></a>
+          </div>
+          <div class="gnbItem">
+            <a href="#refund"> <span>상세</span></a>
+          </div>
+          <div class="gnbItem">
+            <a href="#bottom_review"> <span>후기</span></a>
+          </div>
+          <div class="gnbItem">
+            <a href="#inquiry"> <span>문의</span></a>
+          </div>
+        </div>
+        <div id="productImg">
+          <!-- <img src="./json/productImg/pc01.png" alt="productImage" />
+          <img
+            src="./img/productdetail/productMobile.JPG"
+            alt="productMobileImage"
+          /> -->
+        </div>
+        <div id="refund">
+          <div class="itemWrap">
+            <div class="item">
+              <span>교환 및 환불 안내</span>
+              <div class="info">
+                <span
+                  >교환 및 환불이 필요하신 경우 고객행복센터로 문의해주세요.
+                </span>
+              </div>
+              <span class="refund_firstBtn"
+                >열기 <i class="fa-solid fa-chevron-down"></i
+              ></span>
+            </div>
+            <div class="item_open first">
+              <div class="item_open_wrap">
+                <div>
+                  <h4>주문 취소 관련</h4>
+                  <div>
+                    <span
+                      >- [배송준비중] 부터는 취소가 불가하니, 반품으로
+                      진행해주세요. (상품에 따라 반품이 불가할 수
+                      있습니다.)</span
+                    >
+                    <span
+                      >- 주문마감 시간에 임박할수록 취소 가능 시간이 짧아질 수
+                      있습니다.</span
+                    >
+                    <span
+                      >- 비회원은 App 또는 모바일 웹사이트에서 [마이컬리 >
+                      비회원 주문조회 페이지] 에서 취소가 가능합니다.</span
+                    >
+                    <span
+                      >- 일부 예약상품은 배송 3~4일 전에만 취소
+                      가능합니다.</span
+                    >
+                    <span
+                      >- 주문상품의 부분취소는 불가능합니다. 전체 주문 취소 후
+                      다시 구매 해주세요.</span
+                    >
+                    <span
+                      >- 미성년자 결제 시 법정대리인이 그 거래를 취소할 수
+                      있습니다.</span
+                    >
+                  </div>
+                </div>
+                <div>
+                  <h4>결제 승인 취소 / 환불 관련</h4>
+                  <div>
+                    <span
+                      >- 카드 환불은 카드사 정책에 따르며, 자세한 사항은
+                      카드사에 문의해주세요.</span
+                    >
+                    <span
+                      >- 결제 취소 시, 사용하신 적립금과 쿠폰도 모두
+                      복원됩니다.</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="itemWrap">
+            <div class="item">
+              <span>주문 취소 안내</span>
+              <div class="info">
+                <span>- [주문완료] 상태일 경우에만 주문 취소 가능합니다. </span>
+                <span>
+                  - [마이컬리 > 주문내역 상세페이지] 에서 직접 취소하실 수
+                  있습니다.
+                </span>
+              </div>
+              <span class="refund_secondBtn"
+                >열기 <i class="fa-solid fa-chevron-down"></i
+              ></span>
+            </div>
+            <div class="item_open second">
+              <div class="item_open_wrap">
+                <div>
+                  <h4>01. 상품에 문제가 있는 경우</h4>
+                  <div>
+                    <p>
+                      받으신 상품이 표시·광고 내용 또는 계약 내용과 다른
+                      경우에는 상품을 받은 날부터 3개월 이내,<br />
+                      그 사실을 알게 된 날부터 30일 이내에 교환 및 환불을
+                      요청하실 수 있습니다.<br />
+                      상품의 정확한 상태를 확인할 수 있도록 사진을 함께
+                      보내주시면 더 빠른 상담이 가능합니다.
+                    </p>
+                    <span
+                      >※ 배송 상품에 문제가 있는 것으로 확인되면 배송비는
+                      판매자가 부담합니다.</span
+                    >
+                  </div>
+                </div>
+                <div>
+                  <h4>02. 단순 변심, 주문 착오의 경우</h4>
+                  <div>
+                    <span><b>신선 / 냉장 / 냉동 식품</b></span>
+                    <p>
+                      상품의 특성상 재판매가 불가하여 단순 변심, 주문 착오, 주소
+                      오입력 등 고객의 책임 있는 사유로 인한 교환 및 반품이
+                      어려운 점 양해 부탁드립니다.<br />
+                      상품에 따라 조금씩 맛이 다를 수 있으며, 개인의 기호에 따라
+                      같은 상품도 다르게 느끼실 수 있습니다.
+                    </p>
+                    <span
+                      ><b
+                        >유통기한 30일 이상 식품 (신선 / 냉장 / 냉동 제외) &
+                        기타 상품 (뷰티 제품, 생활용품)</b
+                      ></span
+                    >
+                    <span
+                      >상품을 받은 날부터 7일 이내 교환, 반품이 가능합니다.
+                      고객행복센터로 문의해주세요.</span
+                    >
+                    <span
+                      >※ 단순 변심, 주문 착오, 주소 오입력 등 고객의 책임 있는
+                      사유로 인한 교환 및 반품의 경우 고객님께서 왕복배송비
+                      6,000원을 부담하셔야 합니다.</span
+                    >
+                  </div>
+                </div>
+                <div>
+                  <h4>03. 교환·반품이 불가한 경우</h4>
+                  <div>
+                    <span
+                      >다음에 해당하는 교환·환불 신청은 처리가 어려울 수 있으니
+                      양해 부탁드립니다.</span
+                    >
+                    <span
+                      >고객님의 책임 있는 사유로 상품이 멸실되거나 훼손된
+                      경우</span
+                    >
+                    <span
+                      >(단, 상품의 내용을 확인하기 위해 포장 등을 훼손한 경우는
+                      제외)</span
+                    >
+                    <span
+                      >고객님의 사용 또는 일부 소비로 상품의 가치가 감소한
+                      경우</span
+                    >
+                    <span
+                      >시간이 지나 다시 판매하기 곤란할 정도로 상품의 가치가
+                      감소한 경우</span
+                    >
+                    <span>복제가 가능한 상품의 포장이 훼손된 경우</span>
+                    <span
+                      >고객님의 주문에 따라 개별적으로 생산되는 상품의 제작이
+                      이미 진행된 경우</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="itemWrap">
+            <div class="item">
+              <span>배송관련 안내</span>
+              <div class="info">
+                <span
+                  >배송 과정 중 기상 악화 및 도로교통 상황에 따라 부득이하게
+                  지연 배송이 발생될 수 있습니다.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="bottom_review">
+          <div class="review_imgs">
+            <div>
+              <!-- json -->
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="review_num">
+            <div class="num">
+              <span class="review_total">총 10개</span>
+              <div>
+                <span class="asceBtn">추천순 </span>|
+                <span class="latestBtn"> 최근등록순</span>
+              </div>
+            </div>
+          </div>
+          <div class="user_review">
+            <!-- json -->
+            <!-- <div class="review"> -->
+            <!-- <div class="user">
+                <span>베스트</span>
+                <span>박**</span>
+              </div>
+              <div class="desc">
+                <span>[농심] 육개장 사발면 6입</span>
+                <span>역시 육개장 맛있네요~</span>
+                <div>
+                  <img src="./img/productdetail/reveiw.jpeg" alt="reveiw" />
+                </div>
+                <span>2024.08.04</span>
+              </div>
+              <div class="like">
+                <span><i class="fa-regular fa-thumbs-up"></i> 도움돼요</span>
+              </div> -->
+            <!-- </div> -->
+          </div>
+        </div>
+        <div id="inquiry">
+          <div class="inquiry_top">
+            <div>
+              <span>상품 문의</span>
+            </div>
+            <div>
+              <div>
+                <span
+                  >상품에 대한 문의를 남기는 공간입니다. 해당 게시판의 성격과
+                  다른 글은 사전동의 없이 담당 게시판으로 이동될 수
+                  있습니다.</span
+                >
+                <span
+                  >배송관련, 주문(취소/교환/환불)관련 문의 및 요청사항은
+                  마이컬리 내 <u><b>1:1 문의</b></u
+                  >에 남겨주세요.</span
+                >
+              </div>
+              <span>문의하기</span>
+            </div>
+          </div>
+          <div class="inquiry_user">
+            <ul>
+              <li>
+                <span>제목</span>
+                <div>
+                  <span>작성자</span>
+                  <span>작성일</span>
+                  <span>답변상태</span>
+                </div>
+              </li>
+              <li>
+                <span>비밀글입니다.<i class="fa-solid fa-lock"></i></span>
+                <div>
+                  <span>박*환</span>
+                  <span>2024.08.01</span>
+                  <span><i class="fa-regular fa-square"></i></span>
+                </div>
+              </li>
+              <li>
+                <span>비밀글입니다.<i class="fa-solid fa-lock"></i></span>
+                <div>
+                  <span>박*환</span>
+                  <span>2024.07.29</span>
+                  <span><i class="fa-regular fa-square-check"></i></span>
+                </div>
+              </li>
+              <li>
+                <span>비밀글입니다.<i class="fa-solid fa-lock"></i></span>
+                <div>
+                  <span>임*은</span>
+                  <span>2024.07.26</span>
+                  <span><i class="fa-regular fa-square-check"></i></span>
+                </div>
+              </li>
+              <li>
+                <span>비밀글입니다.<i class="fa-solid fa-lock"></i></span>
+                <div>
+                  <span>김*희</span>
+                  <span>2024.07.25</span>
+                  <span><i class="fa-regular fa-square-check"></i></span>
+                </div>
+              </li>
+              <li>
+                <span>비밀글입니다.<i class="fa-solid fa-lock"></i></span>
+                <div>
+                  <span>양*진</span>
+                  <span>2024.07.20</span>
+                  <span><i class="fa-regular fa-square-check"></i></span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="inquiry_btn">
+            <div>
+              <span><i class="fa-solid fa-chevron-left"></i></span>
+              <span><i class="fa-solid fa-chevron-right"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer_wrapper">
+        <div class="inner">
+          <div class="footer_left">
+            <h1>고객행복센터</h1>
+            <span><b>1644-1107</b> 월~토요일 | 오전 7시 - 오후 6시</span>
+            <div class="footer_left_info">
+              <div class="left_info">
+                <h2>카카오톡 문의</h2>
+                <div>
+                  <span>월~토요일 | 오전 7시 - 오후 6시</span>
+                  <span>일/공휴일 | 오전 7시 - 오후 1시</span>
+                </div>
+              </div>
+              <div class="left_info">
+                <h2>1:1문의</h2>
+                <div>
+                  <span>365일</span>
+                  <span>고객센터 운영시간에 순차적으로 답변드리겠습니다.</span>
+                </div>
+              </div>
+              <div class="left_info">
+                <h2>대량주문 문의</h2>
+                <div>
+                  <span>월~금요일 | 오전 9시 - 오후 6시</span>
+                  <span>점심시간 | 낮 12시 - 오후 1시</span>
+                </div>
+              </div>
+              <span>비회원 문의 : help@kurlycorp.com</span>
+            </div>
+          </div>
+          <div class="footer_right">
+            <div class="footer_right_first">
+              <span>컬리소개</span>
+              <span>컬리소개영상</span>
+              <span>투자정보</span>
+              <span>인재채용</span>
+              <span>이용약관</span>
+              <span>개인정보처리방침</span>
+              <span>이용안내</span>
+            </div>
+            <div class="footer_right_second">
+              <h4>
+                법인명 (상호):주식회사 컬리 | 사업자등록번호:261-81-23567
+                <b>사업자정보 확인</b>
+              </h4>
+              <h4>통신판매업:제 2018-서울강남-01646 호</h4>
+              <h4>
+                주소:서울특별시 강남구 테헤란로 133, 18층(역삼동) |
+                대표이사:김슬아
+              </h4>
+              <h4>채용문의:<b>recruit@kurlycorp.com</b></h4>
+              <h4>팩스:070-7500-6098</h4>
+            </div>
+            <div class="footer_right_third">
+              <a href="https://www.instagram.com/marketkurly/" target="_blank">
+                <img src="./img/insta.png" alt="insta" />
+              </a>
+              <a href="https://www.facebook.com/Marketkurly/" target="_blank">
+                <img src="./img/face.png" alt="face" />
+              </a>
+              <a href="https://blog.naver.com/marketkurly" target="_blank">
+                <img src="./img/Nblog.png" alt="Nblog" />
+              </a>
+              <a href="https://m.post.naver.com/marketkurly" target="_blank">
+                <img src="./img/Npost.png" alt="Npost" />
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCfpdjL5pl-1qKT7Xp4UQzQg"
+                target="_blank"
+              >
+                <img src="./img/youtube.png" alt="youtube" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+$color: (
+  bg-light-color: #fff,
+  main-color: #5f0080,
+  point1-color: #bd76ff,
+  point2-color: #26074d,
+  point3-color: #652c91,
+  point4-color: #7897bc,
+  point5-color: #a864d8,
+  point6-color: #faf4ff,
+);
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background: #f9f9f9;
+}
+.mobileCategory {
+  width: 390px;
+  height: 100%;
+  background: #fff;
+  .inner {
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.1);
+
+    .mobile_header {
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 390px;
+      .mobile_header_wrap {
+        width: 100%;
+        .top {
+          height: 59px;
+          position: relative;
+          a:nth-child(1) {
+            color: map-get($color, main-color);
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            left: 25px;
+            transform: translateY(-50%);
+          }
+          .mobileHeaderTitle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+
+          a:nth-child(3) {
+            position: absolute;
+            top: 50%;
+            right: 25px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            display: flex;
+            gap: 10px;
+            font-size: 20px;
+            color: map-get($color, main-color);
+          }
+        }
+      }
+    }
+    .mobile_contents {
+      border-top: 1px solid #ddd;
+      width: 390px;
+      height: 100vh;
+      margin: 0 auto;
+      display: flex;
+
+      .left {
+        padding-bottom: 300px;
+        height: 100%;
+        overflow-y: scroll;
+        flex: 1;
+        background: #ddd;
+        color: #555;
+        ul {
+          li {
+            font-size: 14px;
+            padding: 10px 20px 5px 10px;
+          }
+        }
+      }
+      .right {
+        height: 100%;
+        padding-bottom: 300px;
+        overflow-y: scroll;
+        background: #fff;
+        flex: 1.7;
+        ul {
+          display: flex;
+          flex-direction: column;
+          padding-bottom: 10px;
+          li {
+            padding: 10px 0 10px 20px;
+          }
+        }
+        & > div {
+          gap: 10px;
+          padding: 10px 5px;
+          display: flex;
+          align-items: center;
+          color: map-get($color, main-color);
+          font-weight: 600;
+          img {
+            width: 40px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background: #f9f9f9;
+}
+
+.mobileCategory {
+  width: 390px;
+  height: 100%;
+  background: #fff;
+}
+.mobileCategory .inner {
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.mobileCategory .inner .mobile_header {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 390px;
+}
+.mobileCategory .inner .mobile_header .mobile_header_wrap {
+  width: 100%;
+}
+.mobileCategory .inner .mobile_header .mobile_header_wrap .top {
+  height: 59px;
+  position: relative;
+}
+.mobileCategory .inner .mobile_header .mobile_header_wrap .top a:nth-child(1) {
+  color: #5f0080;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  transform: translateY(-50%);
+}
+.mobileCategory .inner .mobile_header .mobile_header_wrap .top .mobileHeaderTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mobileCategory .inner .mobile_header .mobile_header_wrap .top a:nth-child(3) {
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+  color: #5f0080;
+}
+.mobileCategory .inner .mobile_contents {
+  border-top: 1px solid #ddd;
+  width: 390px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+}
+.mobileCategory .inner .mobile_contents .left {
+  padding-bottom: 300px;
+  height: 100%;
+  overflow-y: scroll;
+  flex: 1;
+  background: #ddd;
+  color: #555;
+}
+.mobileCategory .inner .mobile_contents .left ul li {
+  font-size: 14px;
+  padding: 10px 20px 5px 10px;
+}
+.mobileCategory .inner .mobile_contents .right {
+  height: 100%;
+  padding-bottom: 300px;
+  overflow-y: scroll;
+  background: #fff;
+  flex: 1.7;
+}
+.mobileCategory .inner .mobile_contents .right ul {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+.mobileCategory .inner .mobile_contents .right ul li {
+  padding: 10px 0 10px 20px;
+}
+.mobileCategory .inner .mobile_contents .right > div {
+  gap: 10px;
+  padding: 10px 5px;
+  display: flex;
+  align-items: center;
+  color: #5f0080;
+  font-weight: 600;
+}
+.mobileCategory .inner .mobile_contents .right > div img {
+  width: 40px;
+}/*# sourceMappingURL=mobileCategory.css.map */
